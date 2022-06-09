@@ -1,6 +1,5 @@
 $i = 360
 do {
-    Start-Process '.\rclone\rclone.exe' '--config rclone.conf bisync googledrive: D:\RDP' 
     Start-Process 'ICACLS' 'D:\RDP\* /grant FreeRDP:F /t'
     Write-Host "[+] Checking ngrok... $i"
     Get-Process -Name 'ngrok'
